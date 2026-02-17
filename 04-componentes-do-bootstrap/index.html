@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Componentes do Bootstrap</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="container-fluid text-center mt-5">
+      <div class="py-5">
+        <h1>Usando Componentes do Bootstrap</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam
+          aliquam perspiciatis hic provident labore quis? Natus veniam delectus,
+          corrupti hic esse vero corporis! Consectetur voluptatibus at quam
+          quidem distinctio? Quaerat ducimus numquam, optio at natus adipisci
+          ipsum dolores ullam rem, placeat tempore eveniet a, illo vitae amet?
+          Temporibus, id. Illum nostrum deleniti odio porro consequuntur quis ex
+          ipsum ea?
+        </p>
+
+        <a href="#" class="btn btn-primary btn-lg"> Call to Action! </a>
+
+        <button class="btn btn-outline-light btn-lg"
+        data-bs-toggle="modal"
+        data-bs-target="#modal1">
+
+          Open Modal!
+        </button>
+
+        <div id="modal1" class="modal fade"  tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h3>Você abriu o modal</h3>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
+                    </div>
+                     
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reprehenderit odit et atque! Dolores, officia aut delectus quidem consequuntur eaque corporis atque commodi fugiat! Et a perspiciatis eligendi harum labore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="py-5 ">
+      <h2 class="text-center">Cards no Bootstrap</h2>
+
+      <div class="d-flex justify-content-center gap-3">
+        <div class="card w-25 product-card" >
+            <img src="https://unsplash.it/300" alt="" class="card-img-top">
+            
+          <div class="card-body">
+            <h3 class="card-title">Titulo do Card</h3>
+
+           </p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero quae reprehenderit accusantium et autem dignissimos iste impedit est obcaecati suscipit, dolorum quasi, facilis fugit consequuntur molestiae delectus accusamus ab?</p>
+          </div>
+        </div>
+
+        <div class="card w-25 product-card"">
+          <div class="card-body">
+            <h3>Titulo do Card</h3>
+          </div>
+        </div>
+
+        <div class="card w-25 product-card"">
+          <div class="card-body">
+            <h3>Titulo do Card</h3>
+
+          </div>
+        </div>
+
+        <div class="card w-25 product-card">
+          <div class="card-body">
+            <h3>Titulo do Card</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
