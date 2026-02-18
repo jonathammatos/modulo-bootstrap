@@ -1,2 +1,28 @@
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
+
+.link-black-blue {
+  color: #000 !important;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: #0d6efd !important;
+  }
+}
+
+.bg-imagem {
+  background-image: url("../img/pexels-kellie-churchman-371878-1001682.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+}
+
+.input-responsive {
+  width: 100%;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: 768px) {
+    max-width: 40vw;
+  }
+}

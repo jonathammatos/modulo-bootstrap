@@ -1,57 +1,188 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oceanis Cruises 🌊✨</title>
   </head>
   <body>
-    <header>
-      <div>Oceanis</div>
+    <header class="navbar navbar-expand-md px-2 py-3">
+      <div class="container-fluid">
+        <div class="logo text-primary fs-3">Oceanis</div>
 
-      <ul>
-        <li>Início</li>
-        <li>O que oferecemos</li>
-        <li>Destinos</li>
-        <li>Benefícios Exclusivos</li>
-      </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button>Reserve Aqui!</button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item me-3">
+              <a href="#" class="link-black-blue text-decoration-none"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a href="#" class="link-black-blue text-decoration-none"
+                >O que oferecemos</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a href="#" class="link-black-blue text-decoration-none"
+                >Destinos</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a href="#BX" class="link-black-blue text-decoration-none"
+                >Benefícios Exclusivos</a
+              >
+            </li>
+          </ul>
+
+          <button class="btn btn-primary">Reserve Aqui!</button>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h1>Descubra o Paraíso em Alto-Mar!</h1>
+      <section
+        class="bg-imagem text-white d-flex justify-content-center align-items-center overflow-hidden"
+        style="height: 70vh"
+      >
+        <div class="w-75">
+          <h1 class="text-start mb-5">Descubra o Paraíso em Alto-Mar!</h1>
 
-        <div>
-          <h2>Embarque em uma Experiência Inesquecível</h2>
-          <p>
-            Navegue por destinos paradisíacos, explore paisagens deslumbrantes e
-            aproveite o luxo e conforto de um cruzeiro projetado para
-            transformar suas férias em momentos inesquecíveis.
-          </p>
+          <div>
+            <h2>Embarque em uma Experiência Inesquecível</h2>
+            <p>
+              Navegue por destinos paradisíacos, explore paisagens deslumbrantes
+              e aproveite o luxo e conforto de um cruzeiro projetado para
+              transformar suas férias em momentos inesquecíveis.
+            </p>
+          </div>
+
+          <form
+            action=""
+            style="min-height: 80px; height: auto"
+            class="mt-4 d-flex flex-column d-md-flex flex-md-row align-items-stretch align-items-md-center"
+          >
+            <input
+              style="height: 45px"
+              class="input-responsive form-control d-inline ps-3 border-0 rounded me-2 mb-md-0 me-md-2 ws-100"
+              type="email"
+              name=""
+              id="email"
+              placeholder="Digite seu email"
+            />
+            <input
+              class="btn btn-primary"
+              style="height: 45px"
+              type="button"
+              value="Quero Conhecer Mais!"
+            />
+          </form>
         </div>
-
-        <form action="">
-          <input type="email" name="" id="email" />
-          <input type="button" value="Quero Conhecer Mais!" />
-        </form>
       </section>
 
-      <section>
+      <section
+        class="d-flex flex-column align-items-center my-5"
+        style="min-height: 60vh; width: 60vw max-auto"
+      >
         <h2>Viva o Melhor da Vida a Bordo</h2>
-
         <p>Conforto, diversão e experiências inesquecíveis para você!</p>
 
-        <div>
-          <ul>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-          </ul>
+        <div
+          id="carousel"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="3"
+            ></button>
+          </div>
+
+          <div class="carousel-inner rounded" style="max-width: 50rem">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="/img/slide1.jpg"
+                class="d-block w-100 img-fluid"
+                style="object-fit: cover; max-height: 400px"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img
+                src="/img/slide2.webp"
+                class="d-block w-100 img-fluid"
+                style="object-fit: cover; max-height: 400px"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img
+                src="/img/slide3.webp"
+                class="d-block w-100 img-fluid"
+                style="object-fit: cover; max-height: 400px"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img
+                src="/img/slide4.webp"
+                class="d-block w-100 img-fluid"
+                style="object-fit: cover; max-height: 400px"
+                alt="Slide 4"
+              />
+            </div>
+          </div>
+
+          <!-- Setas de navegação (Opcional, mas ajudam o usuário) -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
       </section>
+
       <section>
         <h2>Deposimentos de quem já embarcou</h2>
 
@@ -77,7 +208,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="BX">
         <h2>Reserve Agora e Ganhe Benefícios Exclusivos</h2>
         <p>Garanta sua cabine hoje mesmo e aproveite:</p>
 
