@@ -18,6 +18,15 @@
   object-fit: cover;
 }
 
+.bg-imagem2 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.6)),
+    url("../img/pexels-fabianwiktor-994605.webp") 20% 60%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 60vh;
+}
+
 .input-responsive {
   width: 100%;
   margin-bottom: 1rem;
