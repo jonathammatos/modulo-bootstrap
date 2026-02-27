@@ -1,0 +1,5 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+.rounded-circle {
+  border-radius: 9999px;
+  border-color: red;
+}/*# sourceMappingURL=styles.css.map */
